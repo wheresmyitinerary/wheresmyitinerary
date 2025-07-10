@@ -52,19 +52,25 @@ nav {
 }
 
 .nav-links a {
-  background: none;
-  color: #333;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  padding: 1.2rem 1.4rem;
   text-decoration: none;
-  transition: all 0.2s ease;
+  background: radial-gradient(circle at 30% 30%, #ffd700, #e6ac00);
+  border-radius: 50% 50% 0 0;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="20" font-size="20">✨</text></svg>') 16 16, auto;
 }
 
 .nav-links a:hover {
-  color: #e37c68;
-  background-color: rgba(255, 255, 255, 0.5);
+  background: radial-gradient(circle at 40% 40%, #ffec8b, #ffd700);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
 }
 
 /* ───────── Buttons ───────── */
