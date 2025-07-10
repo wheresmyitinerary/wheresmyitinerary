@@ -24,11 +24,10 @@ header {
   align-items: center;
 }
 
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  color: #e37c68;
-  font-weight: bold;
+.logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
