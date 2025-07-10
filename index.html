@@ -68,5 +68,19 @@
   </div>
 
   <script src="scripts.js"></script>
+  <script>
+  const scrollContainer = document.querySelector('.scroll-gallery');
+  const leftArrow = document.querySelector('.left-arrow');
+  const rightArrow = document.querySelector('.right-arrow');
+
+  leftArrow.addEventListener('mouseenter', () => {
+    scrollContainer.scrollBy({ left: -1000, behavior: 'smooth' });
+  });
+
+  rightArrow.addEventListener('mouseenter', () => {
+    scrollContainer.scrollBy({ left: 1000, behavior: 'smooth' });
+  });
+</script>
+
 </body>
 </html>
