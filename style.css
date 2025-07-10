@@ -75,8 +75,8 @@ header {
   transition: transform 0.2s ease;
 }
 
-.grid-gallery article:hover {
-  transform: translateY(-5px);
+.grid-gallery article {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="20" font-size="20">✨</text></svg>') 16 16, auto;
 }
 
 .grid-gallery img {
