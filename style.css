@@ -78,15 +78,16 @@ h1, h2, h3 {
 }
 
 .grid-gallery article {
-  background: background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   border-radius: 12px;
   padding: 2rem;
-  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="20" font-size="20">✨</text></svg>') 16 16, auto;
+}
+
 .grid-gallery article:hover {
   transform: scale(1.03);
   
