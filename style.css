@@ -2,12 +2,13 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background: linear-gradient(135deg, #ffe8e0, #fdd5cc, #fcb1aa, #e79bb8);
+  background: linear-gradient(135deg, #d3f3f2, #a8e6e4, #ffc3e3, #ffb0d4, #e37c68);
   background-attachment: fixed;
   background-size: cover;
   color: #333;
   margin: 0;
-
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 .container {
   max-width: 1200px;
