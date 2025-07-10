@@ -40,14 +40,23 @@ header {
 }
 
 .nav-links a,
-button,
 .buy-button {
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
+  background-color: #e37c68;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1.5rem;
+  transition: background 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #e37c68;
+.buy-button:hover {
+  background-color: #d15f50;
+}
 }
 
 .hero {
