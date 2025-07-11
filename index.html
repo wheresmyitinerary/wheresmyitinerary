@@ -4,73 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WheresMyItinerary</title>
-
-  <!-- Fonts: Prata for headers, Lato for body -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Prata&display=swap" rel="stylesheet">
-
-  <!-- Your stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <div class="container">
     <header>
       <div class="logo">
-  <a href="index.html">
-    <img src="images/logo.png" alt="WheresMyItinerary logo" class="logo-img" />
-  </a>
-</div>
-      <ul class="nav-links">
-  <li><a href="index.html" class="heart-link">Home</a></li>
-  <li><a href="blog.html" class="heart-link">Blog</a></li>
-  <li><a href="about.html" class="heart-link">About</a></li>
-  <li><a href="contact.html" class="heart-link">Contact</a></li>
-</ul>
+        <a href="index.html"><img src="images/logo.png" alt="WheresMyItinerary logo" class="logo-img" /></a>
+      </div>
+      <button class="hamburger" aria-label="Open menu">☰</button>
+      <nav class="mobile-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
     </header>
   </div>
 
-  <div class="container">
-    <section class="hero">
-      <h1>Do it for the plot.</h1>
-      <p>Why not now?</p>
-    </section>
+  <div class="hero-full">
+    <img src="images/hero-feature.jpg" alt="Featured Destination" />
+    <h1>Welcome to Where's My Itinerary</h1>
   </div>
 
-  <div class="container">
-    <main class="grid-gallery">
-      <div class="scroll-wrapper">
-  <div class="scroll-gallery">
-    <article>
-      <img src="images/ATL WHALESHARK.jpg" alt="Whale shark aquarium photo">
-      <h2>I-95 South for the Summer (with the dogs!)</h2>
-    </article>
-    <article>
-      <img src="images/CATAMARAN.jpg" alt="Sunset on a catamaran">
-      <h2>My Top 5 Key West Must Try's</h2>
-    </article>
-    <article>
-      <img src="images/fobby hike.jpg" alt="Foggy mountain view hike">
-      <h2>The Oldest City's Southern Charm</h2>
-    </article>
-    <article>
-      <img src="images/LOBSTAH.jpeg" alt="Girl with lobster on a boat">
-      <h2>Tesla Road Trip Tips</h2>
-    </article>
-    <article>
-      <img src="images/PIER 60.JPG" alt="Pier at sunset">
-      <h2>Mimosas To-Go in Savannah</h2>
-    </article>
-    <article>
-      <img src="images/lavender.jpeg" alt="Lavender festival swing">
-      <h2>Photo Dump: Lavender Fields & Small Town Feels</h2>
-    </article>
-  </div>
+  <div class="container main-layout">
+    <main class="posts">
+      <article class="post-card">
+        <img src="images/post1.jpg" alt="I-95 South with the dogs" />
+        <h2>I-95 South for the Summer (with the dogs!)</h2>
+        <p>From Maryland to Florida — beach paws, snacks, and scenic stops along the way.</p>
+        <div class="share-buttons">
+          <a href="#" title="Share on Twitter">🐦</a>
+          <a href="#" title="Share on Facebook">📘</a>
+          <a href="#" title="Share on Instagram">📸</a>
+        </div>
+      </article>
 
-  <div class="scroll-arrow left-arrow">←</div>
-  <div class="scroll-arrow right-arrow">→</div>
-</div>
-
+      <article class="post-card">
+        <img src="images/post2.jpg" alt="Mimosas To-Go in Savannah" />
+        <h2>Mimosas To-Go in Savannah</h2>
+        <p>Walk, sip, repeat. The best brunch patios and pink drinks in Georgia’s most walkable city.</p>
+        <div class="share-buttons">
+          <a href="#" title="Share on Twitter">🐦</a>
+          <a href="#" title="Share on Facebook">📘</a>
+          <a href="#" title="Share on Instagram">📸</a>
+        </div>
+      </article>
     </main>
+
+    <aside class="sidebar">
+      <div class="widget">
+        <h3>About Me</h3>
+        <p>I’m Amber — always on the move and always hungry. If I’ve been there, I have a story and a brunch rec.</p>
+      </div>
+
+      <div class="widget">
+        <h3>Instagram</h3>
+        <p><a href="https://instagram.com/yourhandle" target="_blank">@wheresmyitinerary</a></p>
+      </div>
+
+      <div class="widget">
+        <h3>Subscribe</h3>
+        <input type="email" placeholder="Your email" />
+        <button>Sign Up</button>
+      </div>
+    </aside>
   </div>
 
   <div class="container">
@@ -80,19 +80,5 @@
   </div>
 
   <script src="scripts.js"></script>
-  <script>
-  const scrollContainer = document.querySelector('.scroll-gallery');
-  const leftArrow = document.querySelector('.left-arrow');
-  const rightArrow = document.querySelector('.right-arrow');
-
-  leftArrow.addEventListener('mouseenter', () => {
-    scrollContainer.scrollBy({ left: -1000, behavior: 'smooth' });
-  });
-
-  rightArrow.addEventListener('mouseenter', () => {
-    scrollContainer.scrollBy({ left: 1000, behavior: 'smooth' });
-  });
-</script>
-
 </body>
 </html>
