@@ -4,121 +4,124 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>WheresMyItinerary</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="scripts.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
 
-  <!-- Polaroid Featured Post -->
+  <!-- Featured Post -->
   <section class="featured-post">
     <div class="polaroid">
-      <div class="pushpin">📌</div>
-      <img src="images/LOBSTAH.jpg" alt="LOBSTAH"/>
+      <span class="pushpin">📌</span>
+      <img src="images/featured.jpg" alt="Latest post">
       <div class="caption">
-        <h2>Blog Post Title</h2>
-        <p>Short intro to the blog post, a fun teaser for the vibes inside...</p>
-        <a class="read-more" href="blog-post.html">Read More</a>
+        <h2>My Latest Summer Roadtrip</h2>
+        <p>From beach sunsets to dog-friendly diners—here’s the full scoop.</p>
+        <a href="blog/latest-roadtrip.html" class="read-more">Read More</a>
       </div>
     </div>
   </section>
 
-  <!-- Phone + Resource Menu -->
+  <!-- Resource Section -->
   <section class="resource-section">
     <div class="iphone-mockup">
-      <img src="images/iphone-frame.png" alt="iPhone display"/>
+      <img src="images/iphone-mockup.png" alt="Phone graphic">
       <div class="screen-content">
-        <img src="images/itinerary-preview.jpg" alt="Itinerary preview"/>
+        <img src="images/itinerary-sample.jpg" alt="Itinerary sample" />
       </div>
     </div>
     <div class="menu">
-      <h3>Grab a Freebie:</h3>
+      <h3>Mini Resources</h3>
       <ul>
-        <li><a href="#">Mini Itineraries</a></li>
-        <li><a href="#">Date Night Ideas</a></li>
-        <li><a href="#">Checklist Downloads</a></li>
+        <li>✨ Free 48hr Itineraries</li>
+        <li>❤️ Date Night Ideas</li>
+        <li>📋 Packing Checklists</li>
       </ul>
-      <a class="shop-button" href="shop.html">Itineraries & Resources</a>
+      <a href="shop.html" class="shop-button">Itineraries & Resources</a>
     </div>
   </section>
 
-  <!-- Seasonal Polaroid Grid -->
+  <!-- Seasonal Vibes Grid -->
   <section class="seasonal-vibes">
-    <h3>Explore by Vibe</h3>
+    <h2>Pick Your Vibe</h2>
     <div class="vibe-grid">
-      <a href="#"><img src="images/vibe1.jpg" alt="Hot Sunny Vibes"/></a>
-      <a href="#"><img src="images/vibe2.jpg" alt="Cool Dreamy Vibes"/></a>
-      <a href="#"><img src="images/vibe3.jpg" alt="Green Outdoors"/></a>
-      <a href="#"><img src="images/vibe4.jpg" alt="City Vibes"/></a>
+      <a href="blog/hot-sunny.html"><img src="images/vibe-hot.jpg" alt="Hot Sunny Vibes"></a>
+      <a href="blog/cool-dreamy.html"><img src="images/vibe-cool.jpg" alt="Cool Dreamy Vibes"></a>
+      <a href="blog/green-outdoors.html"><img src="images/vibe-green.jpg" alt="Green Outdoors Vibes"></a>
+      <a href="blog/city.html"><img src="images/vibe-city.jpg" alt="City Vibes"></a>
     </div>
   </section>
 
-  <!-- Email Signup Block -->
+  <!-- Email Signup -->
   <section class="email-signup">
     <div class="cta-text">
-      <h3>Stay In The Loop ✉️</h3>
-      <p>Get exclusive content, early access to freebies, and secret travel tea.</p>
+      <h3>Stay in the Loop</h3>
+      <p>Subscribe for free travel resources, tips, and first access to new content!</p>
     </div>
     <form class="signup-form">
-      <input type="text" placeholder="Name" required/>
-      <input type="email" placeholder="Email" required/>
+      <input type="text" placeholder="Your name" required />
+      <input type="email" placeholder="Your email" required />
       <button type="submit">Sign Up for Exclusives</button>
     </form>
   </section>
 
-  <!-- Blog Grid + Load More -->
+  <!-- Blog Preview Grid -->
   <section class="blog-preview">
-    <h3>Latest on the Blog</h3>
+    <h2>Latest Posts</h2>
     <div class="blog-grid">
-      <!-- Repeat 6 blog cards -->
-      <article><img src="images/post1.jpg"/><h4>Post Title</h4></article>
-      <article><img src="images/post2.jpg"/><h4>Post Title</h4></article>
-      <article><img src="images/post3.jpg"/><h4>Post Title</h4></article>
-      <article><img src="images/post4.jpg"/><h4>Post Title</h4></article>
-      <article><img src="images/post5.jpg"/><h4>Post Title</h4></article>
-      <article><img src="images/post6.jpg"/><h4>Post Title</h4></article>
+      <article><a href="#"><img src="images/blog1.jpg" alt="Blog 1" /></a></article>
+      <article><a href="#"><img src="images/blog2.jpg" alt="Blog 2" /></a></article>
+      <article><a href="#"><img src="images/blog3.jpg" alt="Blog 3" /></a></article>
+      <article><a href="#"><img src="images/blog4.jpg" alt="Blog 4" /></a></article>
+      <article><a href="#"><img src="images/blog5.jpg" alt="Blog 5" /></a></article>
+      <article><a href="#"><img src="images/blog6.jpg" alt="Blog 6" /></a></article>
     </div>
     <button class="load-more">Load More</button>
   </section>
 
   <!-- Work With Me -->
   <section class="work-with-me">
-    <img src="images/your-photo.jpg" alt="Your photo"/>
+    <img src="images/author.jpg" alt="Author photo" />
     <div class="work-info">
-      <h3>Let’s Work Together 💼</h3>
-      <p>If you're a brand, destination, or fellow creator—I'd love to collaborate!</p>
-      <a class="work-btn" href="contact.html">Work With Me</a>
+      <h3>Collaborate With Me</h3>
+      <p>Want to partner on a project, product, or campaign? Let’s chat.</p>
+      <a href="contact.html" class="work-btn">Work With Me</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="footer-logo">
-      <img src="images/logo.png" alt="WheresMyItinerary logo"/>
-    </div>
+    <img src="images/logo.png" alt="WheresMyItinerary Logo" style="height: 50px;" />
     <div class="footer-columns">
       <div>
         <h4>Get Inspired</h4>
         <ul>
-          <li><a href="#">Latest Posts</a></li>
-          <li><a href="#">Photo Diaries</a></li>
+          <li><a href="#">Road Trips</a></li>
+          <li><a href="#">Weekend Getaways</a></li>
+          <li><a href="#">Dog-Friendly Picks</a></li>
         </ul>
       </div>
       <div>
         <h4>Get Organized</h4>
         <ul>
-          <li><a href="#">Downloads</a></li>
-          <li><a href="#">Packing Tips</a></li>
+          <li><a href="#">Mini Itineraries</a></li>
+          <li><a href="#">Checklists</a></li>
+          <li><a href="#">Trip Planners</a></li>
         </ul>
       </div>
       <div>
         <h4>Get in Contact</h4>
         <ul>
-          <li><a href="contact.html">Contact Form</a></li>
-          <li><a href="collab.html">Work With Me</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="work.html">Collab Inquiry</a></li>
         </ul>
       </div>
     </div>
   </footer>
 
+  <!-- Optional Instagram Embed -->
+  <script async src="//www.instagram.com/embed.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
