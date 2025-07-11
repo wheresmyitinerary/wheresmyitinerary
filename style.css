@@ -1,4 +1,9 @@
-
+@font-face {
+  font-family: 'Pinklatte';
+  src: url('fonts/Pinklatte.woff2') format('woff2'),
+       url('fonts/Pinklatte.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 /* General Reset */
 * {
@@ -8,17 +13,12 @@
 }
 
 body {
-  font-family: 'Playfair Display', 'Georgia', serif;
+  font-family: 'Lato', sans-serif;
   background: linear-gradient(135deg, #d3f3f2, #a8e6e4, #ffc3e3, #ffb0d4);
   color: #333;
   background-attachment: fixed;
   background-size: cover;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='32' width='32'><text y='20' font-size='20'>✨</text></svg>") 16 16, auto;
-}
-h1, h2, h3, h4, h5, h6,
-.hero-text h1,
-.script-title {
-  font-family: 'Playfair Display', serif;
 }
 .top-nav {
   position: absolute;
@@ -180,42 +180,22 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Vibes Grid */
-.vibe-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.vibe-card {
-  width: 240px;
-  background: white;
-  border: 10px solid white;
-  border-bottom: 60px solid white;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+.seasonal-vibes {
   text-align: center;
-  transition: transform 0.3s;
-  position: relative;
-  text-decoration: none;
-  color: inherit;
+  padding: 3rem 1rem;
 }
 
-.vibe-card:hover {
-  transform: scale(1.05);
+.vibe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.vibe-card img {
+.vibe-grid img {
   width: 100%;
-  height: 260px;
-  object-fit: cover;
-}
-
-.vibe-card h3 {
-  margin-top: 1rem;
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  color: #333;
+  border-radius: 10px;
+  transition: transform 0.3s;
 }
 
 .vibe-grid img:hover {
@@ -223,56 +203,40 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Email Signup */
-.newsletter-signup {
+.email-signup {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: #c7fce7;
-  color: white;
-  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
   border-radius: 12px;
-  margin: 4rem 2rem;
-  gap: 2rem;
+  margin: 2rem;
+  align-items: center;
 }
 
-.signup-left {
-  flex: 1 1 300px;
+.cta-text {
+  max-width: 400px;
 }
 
-.signup-left h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.signup-right {
+.signup-form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
-  flex: 1 1 300px;
 }
 
-.signup-right input {
+.signup-form input {
   padding: 0.75rem;
-  border: 2px solid white;
-  background: transparent;
-  color: white;
   border-radius: 6px;
+  border: 1px solid #ccc;
   font-size: 1rem;
 }
 
-.signup-right input::placeholder {
-  color: #fdddc7;
-}
-
-.signup-right button {
-  background: white;
-  color: #cc6527;
+.signup-form button {
+  background: #e37c68;
+  color: white;
   border: none;
-  padding: 0.75rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 6px;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 /* Blog Grid */
@@ -317,15 +281,15 @@ h1, h2, h3, h4, h5, h6,
   flex-direction: row-reverse; /* puts image on the right */
   gap: 2rem;
   padding: 3rem 1rem;
-  align-items: left;
+  align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
 }
 
 .work-with-me img {
-  width: 250px;
+  width: 300px;
   height: auto;
-  border-radius: 12;
+  border-radius: 0;
   object-fit: cover;
 }
 
