@@ -69,29 +69,53 @@ body {
   justify-content: center;
 }
 
-.iphone-mockup {
-  position: relative;
-  width: 250px;
+.iphone-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem auto;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.iphone-mockup img {
+.iphone-display img {
+  max-width: 300px;
   width: 100%;
-}
-
-.screen-content {
-  position: absolute;
-  top: 13%;
-  left: 9%;
-  width: 82%;
-  height: 70%;
-  overflow: hidden;
+  height: auto;
   border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.screen-content img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.iphone-menu {
+  flex: 1;
+  min-width: 260px;
+}
+
+.iphone-menu h2 {
+  font-size: 1.6rem;
+  color: #e37c68;
+  margin-bottom: 1rem;
+}
+
+.iphone-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.iphone-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.iphone-menu a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.iphone-menu a:hover {
+  color: #e37c68;
+
 }
 
 .menu {
