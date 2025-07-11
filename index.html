@@ -4,8 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>WheresMyItinerary</title>
-  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Custom Font: Pinklatte -->
+  <style>
+    @font-face {
+      font-family: 'Pinklatte';
+      src: url('fonts/Pinklatte.woff2') format('woff2'),
+           url('fonts/Pinklatte.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Pinklatte', cursive;
+    }
+
+    .hero-text h1 {
+      font-family: 'Pinklatte', cursive;
+    }
+
+    .script-title {
+      font-family: 'Pinklatte', cursive;
+    }
+  </style>
 </head>
 <body>
 
@@ -33,21 +60,38 @@
   <!-- Choose Your Vibe -->
   <section class="vibes-section container">
     <h2 class="script-title">Choose Your Vibe</h2>
-    <div class="vibe-grid">…</div>
+    <div class="vibe-grid">
+      <!-- vibe images here -->
+    </div>
   </section>
 
   <!-- Frosted iPhone + Freebies -->
   <section class="frosted iphone-wrapper container">
     <div class="iphone-display">
-  <img src="images/IPHONE.PNG" alt="Phone Itinerary" />
-</div>
-
+      <img src="images/IPHONE.PNG" alt="Phone Itinerary" />
+    </div>
+    <div class="iphone-menu">
+      <h2>Mini Resources</h2>
+      <ul>
+        <li><a href="#">Free Mini Itineraries</a></li>
+        <li><a href="#">Date Night Ideas</a></li>
+        <li><a href="#">Checklists</a></li>
+      </ul>
+      <a href="shop.html" class="shop-button">Itineraries & Resources</a>
+    </div>
   </section>
 
   <!-- Email Signup Capsule -->
   <section class="frosted signup-wrapper container">
-    <div class="cta-text-two">…</div>
-    <form class="signup-form-two">…</form>
+    <div class="cta-text-two">
+      <h3>Sign up for exclusives!</h3>
+      <p>Get fresh ideas, freebies, and travel inspo delivered straight to your inbox.</p>
+    </div>
+    <form class="signup-form-two">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <button type="submit">Sign Up</button>
+    </form>
   </section>
 
   <!-- Blog Grid + Load More -->
@@ -76,38 +120,38 @@
 
   <!-- Footer -->
   <footer>
-  <div class="footer-container">
-    <div class="footer-logo">
-      <img src="images/logo.png" alt="WheresMyItinerary Logo" />
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="WheresMyItinerary Logo" />
+      </div>
+      <div class="footer-columns">
+        <div>
+          <h4>Get Inspired</h4>
+          <ul>
+            <li><a href="#">Road Trips</a></li>
+            <li><a href="#">Weekend Getaways</a></li>
+            <li><a href="#">Dog-Friendly Picks</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get Organized</h4>
+          <ul>
+            <li><a href="#">Mini Itineraries</a></li>
+            <li><a href="#">Checklists</a></li>
+            <li><a href="#">Trip Planners</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in Contact</h4>
+          <ul>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="work.html">Collab Inquiry</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="footer-columns">
-      <div>
-        <h4>Get Inspired</h4>
-        <ul>
-          <li><a href="#">Road Trips</a></li>
-          <li><a href="#">Weekend Getaways</a></li>
-          <li><a href="#">Dog-Friendly Picks</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get Organized</h4>
-        <ul>
-          <li><a href="#">Mini Itineraries</a></li>
-          <li><a href="#">Checklists</a></li>
-          <li><a href="#">Trip Planners</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get in Contact</h4>
-        <ul>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="work.html">Collab Inquiry</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- Optional Instagram Embed -->
   <script async src="//www.instagram.com/embed.js"></script>
