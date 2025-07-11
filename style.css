@@ -20,6 +20,35 @@ body {
   background-size: cover;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='32' width='32'><text y='20' font-size='20'>✨</text></svg>") 16 16, auto;
 }
+.top-nav {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 999;
+}
+
+.top-nav nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav nav li a {
+  text-decoration: none;
+  font-family: 'Pinklatte', cursive;
+  color: #fff;
+  background-color: rgba(0,0,0,0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.top-nav nav li a:hover {
+  background-color: rgba(227, 124, 104, 0.9);
+  color: white;
+}
 
 /* Polaroid Post */
 .featured-post {
