@@ -185,17 +185,38 @@ body {
   padding: 3rem 1rem;
 }
 
-.vibe-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+.choose-vibe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #2f3935; /* deep greenish bg */
 }
 
-.vibe-grid img {
+.vibe-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 240px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+}
+
+.vibe-card img {
   width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s;
+  height: 280px;
+  object-fit: cover;
+}
+
+.vibe-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  border-top: 2px solid #cc6527;
+  padding-top: 0.5rem;
+  color: #333;
 }
 
 .vibe-grid img:hover {
@@ -203,40 +224,56 @@ body {
 }
 
 /* Email Signup */
-.email-signup {
+.newsletter-signup {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 2rem;
+  background: #cc6527;
+  color: white;
+  padding: 3rem 2rem;
   border-radius: 12px;
-  margin: 2rem;
-  align-items: center;
+  margin: 4rem 2rem;
+  gap: 2rem;
 }
 
-.cta-text {
-  max-width: 400px;
+.signup-left {
+  flex: 1 1 300px;
 }
 
-.signup-form {
+.signup-left h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.signup-right {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
+  flex: 1 1 300px;
 }
 
-.signup-form input {
+.signup-right input {
   padding: 0.75rem;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
   border-radius: 6px;
-  border: 1px solid #ccc;
   font-size: 1rem;
 }
 
-.signup-form button {
-  background: #e37c68;
-  color: white;
+.signup-right input::placeholder {
+  color: #fdddc7;
+}
+
+.signup-right button {
+  background: white;
+  color: #cc6527;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem;
   border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Blog Grid */
