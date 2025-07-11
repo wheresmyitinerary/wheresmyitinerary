@@ -267,18 +267,21 @@ body {
 
 /* Work With Me */
 .work-with-me {
-  flex-direction: row-reverse;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row-reverse; /* puts image on the right */
   gap: 2rem;
-  padding: 2rem;
+  padding: 3rem 1rem;
   align-items: center;
   justify-content: center;
+  text-align: left;
 }
 
 .work-with-me img {
-  width: 250px;
-  border-radius: 0px;
+  width: 300px;
+  height: auto;
+  border-radius: 0;
+  object-fit: cover;
 }
 
 .work-info {
