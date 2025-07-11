@@ -46,31 +46,32 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  margin: 0;
+  gap: 2rem;
   padding: 0;
+  margin: 0;
 }
 
-.nav-links a {
-  font-weight: bold;
-  font-size: 0.9rem;
-  color: white;
-  padding: 1.2rem 1.4rem;
-  text-decoration: none;
-  background: radial-gradient(circle at 30% 30%, #ffd700, #e6ac00);
-  border-radius: 50% 50% 0 0;
+.heart-link {
   display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url('images/gold-heart.png') center/cover no-repeat;
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
-  transition: all 0.3s ease;
-  position: relative;
+  line-height: 60px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="20" font-size="20">✨</text></svg>') 16 16, auto;
+  position: relative;
 }
 
-.nav-links a:hover {
-  background: radial-gradient(circle at 40% 40%, #ffec8b, #ffd700);
+.heart-link:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.6);
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
 }
 
 /* ───────── Buttons ───────── */
