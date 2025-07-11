@@ -1,4 +1,10 @@
-
+@font-face {
+  font-family: 'Pinklatte';
+  src: url('fonts/Pinklatte.woff2') format('woff2'),
+       url('fonts/Pinklatte.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /* General Reset */
 * {
   margin: 0;
