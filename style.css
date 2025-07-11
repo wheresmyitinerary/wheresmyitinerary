@@ -91,7 +91,6 @@ body {
 }
 
 .iphone-menu h2 {
-  .script-title 
   font-family: 'Pinklatte', cursive;
   font-size: 1.6rem;
   color: #e37c68;
@@ -370,12 +369,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-50%);
   color: white;
   text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-}
-.hero-text h1 {
-  .script-title 
-  font-family: 'Pinklatte', cursive;
-  font-size: 3rem;
-  font-weight: 600;
 }
 
 /* Featured Over Hero */
