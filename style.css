@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Pinklatte', cursive, sans-serif;
   background: linear-gradient(135deg, #d3f3f2, #a8e6e4, #ffc3e3, #ffb0d4);
   color: #333;
   background-attachment: fixed;
@@ -228,7 +228,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: ##c7fce7;
+  background: #c7fce7;
   color: white;
   padding: 3rem 2rem;
   border-radius: 12px;
