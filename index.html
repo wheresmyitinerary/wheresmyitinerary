@@ -11,73 +11,88 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Custom Font: Pinklatte -->
+  <style>
+    @font-face {
+      font-family: 'Pinklatte';
+      src: url('fonts/Pinklatte.woff2') format('woff2'),
+           url('fonts/Pinklatte.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    .hero-text h1,
+    .script-title {
+      font-family: 'Pinklatte', cursive;
+    }
+
+    img {
+      border-radius: 0 !important;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Hero Section -->
-  <section class="hero-header">
-    <div class="top-nav">
-      <nav>
-        <ul>
-          <li><a href="#">Vibes</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+<section class="hero-header">
+  <div class="top-nav">
+    <nav>
+      <ul>
+        <li><a href="#">Vibes</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
-    <img src="images/PIER 60.JPG" alt="Hero image" />
+  <img src="images/PIER 60.JPG" alt="Hero image" />
 
-    <div class="hero-text">
-      <h1>Welcome to Where’s My Itinerary</h1>
-    </div>
-  </section>
-
-  <!-- Featured Post -->
-  <section class="featured-post">
-    <div class="polaroid">
-      <img src="images/fobby hike.jpg" alt="Featured post">
-      <div class="caption">
-        <h2>Main Post Title</h2>
-        <p>Intro snippet for your featured post …</p>
-        <a href="blog/main-post.html" class="read-more">Read More</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Choose Your Vibe -->
-  <section class="seasonal-vibes">
-  <h2 class="script-title">Choose Your Vibe</h2>
-  <div class="vibe-grid">
-    <a href="#" class="vibe-card">
-      <img src="images/vibe1.jpg" alt="Hot Vibe" />
-      <h3>Hot Sunny Vibes</h3>
-    </a>
-    <a href="#" class="vibe-card">
-      <img src="images/vibe2.jpg" alt="Cool Vibe" />
-      <h3>Cool Dreamy Vibes</h3>
-    </a>
-    <!-- Repeat -->
+  <div class="hero-text">
+    <h1>Welcome to Where’s My Itinerary</h1>
   </div>
 </section>
 
-  <!-- iPhone + Resources -->
-  <section class="frosted iphone-wrapper container">
-    <div class="iphone-display">
-      <img src="images/IPHONE.PNG" alt="Phone Itinerary" />
+<!-- Now move featured post below -->
+<section class="featured-post">
+  <div class="polaroid">
+    <img src="images/fobby hike.jpg" alt="Featured post">
+    <div class="caption">
+      <h2>Main Post Title</h2>
+      <p>Intro snippet for your featured post …</p>
+      <a href="blog/main-post.html" class="read-more">Read More</a>
     </div>
-    <div class="iphone-menu">
-      <h2>Mini Resources</h2>
+  </div>
+</section>
+
+  <!-- Featured Vibe -->
+
+
+  <!-- Choose Your Vibe -->
+  <section class="seasonal-vibes">
+    <h2>Choose Your Vibe</h2>
+    <div class="vibe-grid">
+      <a href="blog/hot-sunny.html"><img src="images/vibe_1.png" alt="Hot Sunny Vibes"></a>
+      <a href="blog/cool-dreamy.html"><img src="images/blank_polaroid.png" alt="Cool Dreamy Vibes"></a>
+      <a href="blog/green-outdoors.html"><img src="images/blank_polaroid.png" alt="Green Outdoors Vibes"></a>
+      <a href="blog/city.html"><img src="images/blank_polaroid.png" alt="City Vibes"></a>
+    </div>
+  </section>
+
+  <!-- iPhone + Resources (Seamless) -->
+  <section class="frosted iphone-wrapper container">
+  <div class="iphone-display"><img src="images/IPHONE.PNG" alt="Phone Itinerary" />
+  </div>
+  <div class="iphone-menu"><h2>Mini Resources</h2>
       <ul>
         <li><a href="#">✨ Free Mini Itineraries</a></li>
         <li><a href="#">❤️ Date Night Ideas</a></li>
         <li><a href="#">📋 Checklists</a></li>
       </ul>
       <a href="shop.html" class="shop-button">Itineraries & Resources</a>
-    </div>
-  </section>
+    </div></div>
+</section>
 
   <!-- Email Signup -->
   <section class="email-signup">
@@ -107,13 +122,13 @@
   </section>
 
   <!-- Work With Me -->
-  <section class="frosted work-with-me container">
-    <div class="work-info">
+  <section class="frosted work with me container">
+   <div class="work-info">…</div>
+<img src="images/CATAMARAN.jpg" alt="Author photo" />
       <h3>Collaborate With Me</h3>
       <p>Want to partner on a project, product, or campaign? Let’s chat.</p>
       <a href="contact.html" class="work-btn">Work With Me</a>
     </div>
-    <img src="images/CATAMARAN.jpg" alt="Author photo" />
   </section>
 
   <!-- Footer -->
