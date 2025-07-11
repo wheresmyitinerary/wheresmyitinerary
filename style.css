@@ -120,7 +120,7 @@ body {
   width: 100%;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .iphone-menu {
@@ -277,20 +277,19 @@ body {
 /* Work With Me */
 .work-with-me {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row-reverse; /* puts image on the right */
   gap: 2rem;
   padding: 3rem 1rem;
   align-items: center;
   justify-content: center;
-  text-align: left;
+  text-align: center;
 }
 
 .work-with-me img {
   width: 300px;
   height: auto;
   border-radius: 0;
-  object-fit: cover;
+  object-fit: fit;
 }
 
 .work-info {
@@ -415,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero-text {
   position: absolute;
-  top: 20%;
+  top: 40%;
   left: 10%;
   transform: translateY(-50%);
   color: white;
@@ -425,14 +424,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .featured-over-hero {
   position: relative;
-  margin-top: -80px; /* Pull it into view just below hero image */
+  margin-top: 80px; 
   display: flex;
   justify-content: center;
   z-index: 1;
 }
 
 .featured-over-hero .polaroid {
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
   border-radius: 0;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
