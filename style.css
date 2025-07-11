@@ -98,9 +98,8 @@ body {
 }
 
 .iphone-menu h2 {
-  .script-title {
+  .script-title 
   font-family: 'Pinklatte', cursive;
-}
   font-size: 1.6rem;
   color: #e37c68;
   margin-bottom: 1rem;
