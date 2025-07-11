@@ -69,6 +69,14 @@ body {
 .caption {
   padding: 1rem;
 }
+.featured-post {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  margin-top: -2rem;
+}
 
 .read-more {
   display: inline-block;
