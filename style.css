@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'Pinklatte';
-  src: url('fonts/Pinklatte.woff2') format('woff2'),
-       url('fonts/Pinklatte.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+
 }
 /* General Reset */
 * {
@@ -13,12 +8,17 @@
 }
 
 body {
-  font-family: 'Pinklatte', cursive, sans-serif;
+  font-family: 'Playfair Display', 'Georgia', serif;
   background: linear-gradient(135deg, #d3f3f2, #a8e6e4, #ffc3e3, #ffb0d4);
   color: #333;
   background-attachment: fixed;
   background-size: cover;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='32' width='32'><text y='20' font-size='20'>✨</text></svg>") 16 16, auto;
+}
+h1, h2, h3, h4, h5, h6,
+.hero-text h1,
+.script-title {
+  font-family: 'Playfair Display', serif;
 }
 .top-nav {
   position: absolute;
