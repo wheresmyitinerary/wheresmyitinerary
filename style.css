@@ -423,34 +423,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .featured-over-hero {
-  position: relative;
-  margin-top: 80px; 
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
-
-.featured-over-hero .polaroid {
-  max-width: 800px;
-  width: 100%;
-  border-radius: 0;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-/* Featured Over Hero */
-.featured-over-hero {
   position: absolute;
-  top: 70%;
+  bottom: -100px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
-/* Script-style Titles */
-.script-title {
-  font-family: 'Pinklatte', cursive;
-  font-size: 2rem;
-  color: #e37c68;
-  margin: 2rem 0 1rem 0;
+.polaroid {
+  background: white;
+  border: 10px solid white;
+  border-bottom: 60px solid white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 400px;
+  text-align: center;
 }
 
 /* Frosted Background */
