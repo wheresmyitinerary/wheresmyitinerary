@@ -41,14 +41,7 @@ body {
 
 .polaroid img {
   width: 100%;
-  border-radius: 10px;
-}
-
-.pushpin {
-  position: absolute;
-  top: -12px;
-  left: 10px;
-  font-size: 2rem;
+  border-radius: 0px;
 }
 
 .caption {
@@ -223,7 +216,7 @@ body {
 
 .blog-grid article img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .load-more {
@@ -247,7 +240,7 @@ body {
 
 .work-with-me img {
   width: 250px;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .work-info {
