@@ -180,42 +180,41 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Vibes Grid */
-.seasonal-vibes {
-  text-align: center;
-  padding: 3rem 1rem;
-}
-
-.choose-vibe {
+.vibe-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 4rem 2rem;
-  background-color: #c7fce7; /* deep greenish bg */
+  margin-top: 2rem;
 }
 
 .vibe-card {
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
   width: 240px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  background: white;
+  border: 10px solid white;
+  border-bottom: 60px solid white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s;
   position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.vibe-card:hover {
+  transform: scale(1.05);
 }
 
 .vibe-card img {
   width: 100%;
-  height: 280px;
+  height: 260px;
   object-fit: cover;
 }
 
 .vibe-card h3 {
+  margin-top: 1rem;
+  font-family: 'Playfair Display', serif;
   font-size: 1rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  border-top: 2px solid #c7fce7;
-  padding-top: 0.5rem;
   color: #333;
 }
 
