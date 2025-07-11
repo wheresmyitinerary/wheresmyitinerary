@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>WheresMyItinerary</title>
-  
+
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" />
 
-  <!-- CSS -->
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
 
   <!-- Custom Font: Pinklatte -->
@@ -21,27 +21,27 @@
       font-style: normal;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6,
+    .hero-text h1,
+    .script-title {
       font-family: 'Pinklatte', cursive;
     }
 
-    .hero-text h1 {
-      font-family: 'Pinklatte', cursive;
-    .script-title 
-      font-family: 'Pinklatte', cursive;
+    img {
+      border-radius: 0 !important;
     }
   </style>
 </head>
 <body>
 
-  <!-- Full-width Hero Banner -->
+  <!-- Hero Section -->
   <section class="hero-header">
     <img src="images/PIER 60.JPG" alt="Hero image" />
     <div class="hero-text">
       <h1>Welcome to Where’s My Itinerary</h1>
     </div>
 
-    <!-- Framed Main Blog Post (Polaroid style) -->
+    <!-- Featured Post -->
     <div class="featured-over-hero">
       <div class="polaroid">
         <img src="images/fobby hike.jpg" alt="Featured post">
@@ -54,20 +54,17 @@
     </div>
   </section>
 
-  <!-- Choose Your Vibe -->
+  <!-- Featured Vibe -->
   <section class="vibes-section container">
-         <img src="images/LOBSTAH.jpeg" alt="Latest post">
-      <div class="caption">
-        <h2>My Latest Summer Excusion</h2>
-        <p>From beach sunsets to dog-friendly diners—here’s the full scoop.</p>
-        <a href="blog/latest-roadtrip.html" class="read-more">Full Scoop Here</a>
-      </div>
+    <img src="images/LOBSTAH.jpeg" alt="Latest post">
+    <div class="caption">
+      <h2>My Latest Summer Excursion</h2>
+      <p>From beach sunsets to dog-friendly diners—here’s the full scoop.</p>
+      <a href="blog/latest-roadtrip.html" class="read-more">Full Scoop Here</a>
     </div>
   </section>
 
-  <!-- Resource Section -->
-
-  <!-- Seasonal Vibes Grid -->
+  <!-- Choose Your Vibe -->
   <section class="seasonal-vibes">
     <h2>Choose Your Vibe</h2>
     <div class="vibe-grid">
@@ -75,6 +72,22 @@
       <a href="blog/cool-dreamy.html"><img src="images/blank_polaroid.png" alt="Cool Dreamy Vibes"></a>
       <a href="blog/green-outdoors.html"><img src="images/blank_polaroid.png" alt="Green Outdoors Vibes"></a>
       <a href="blog/city.html"><img src="images/blank_polaroid.png" alt="City Vibes"></a>
+    </div>
+  </section>
+
+  <!-- iPhone + Resources (Seamless) -->
+  <section class="iphone-wrapper container">
+    <div class="iphone-display">
+      <img src="images/IPHONE.PNG" alt="Phone Itinerary" />
+    </div>
+    <div class="iphone-menu">
+      <h2>Mini Resources</h2>
+      <ul>
+        <li><a href="#">✨ Free Mini Itineraries</a></li>
+        <li><a href="#">❤️ Date Night Ideas</a></li>
+        <li><a href="#">📋 Checklists</a></li>
+      </ul>
+      <a href="shop.html" class="shop-button">Itineraries & Resources</a>
     </div>
   </section>
 
@@ -91,9 +104,9 @@
     </form>
   </section>
 
-  <!-- Blog Preview Grid -->
+  <!-- Blog Grid -->
   <section class="blog-preview">
-    <h2>Dive in to the Latest Posts</h2>
+    <h2>Dive into the Latest Posts</h2>
     <div class="blog-grid">
       <article><a href="#"><img src="images/LOBSTAH.jpeg" alt="Blog 1" /></a></article>
       <article><a href="#"><img src="images/PIER 60.JPG" alt="Blog 2" /></a></article>
@@ -103,25 +116,6 @@
       <article><a href="#"><img src="images/PIER 60.JPG" alt="Blog 6" /></a></article>
     </div>
     <button class="load-more">Load More</button>
-  </section>
-
-    </div>
-  </section>
-
-  <!-- Frosted iPhone + Freebies -->
-  <section class="frosted iphone-wrapper container">
-    <div class="iphone-display">
-      <img src="images/IPHONE.PNG" alt="Phone Itinerary" />
-    </div>
-    <div class="iphone-menu">
-      <h2>Mini Resources</h2>
-      <ul>
-        <li><a href="#">✨Free Mini Itineraries</a></li>
-        <li><a href="#">❤️Date Night Ideas</a></li>
-        <li><a href="#">📋Checklists</a></li>
-      </ul>
-      <a href="shop.html" class="shop-button">Itineraries & Resources</a>
-    </div>
   </section>
 
   <!-- Work With Me -->
@@ -169,7 +163,7 @@
     </div>
   </footer>
 
-  <!-- Optional Instagram Embed -->
+  <!-- Scripts -->
   <script async src="//www.instagram.com/embed.js"></script>
   <script src="scripts.js"></script>
 </body>
