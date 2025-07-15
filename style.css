@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6,
   border: 10px solid white;
   border-bottom: 60px solid white;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  max-width: 500px;
+  max-width: 800px;
   text-align: center;
   transform: scale(1.1);
   transition: transform 0.3s ease;
@@ -147,13 +147,16 @@ button:hover, .shop-button:hover, .work-btn:hover, .read-more:hover {
    YOUTUBE VIDEO FEATURE
    ============================ */
 .youtube-channel {
-  padding: 4rem 2rem;
+ padding: 4rem 2rem;
   background: #ffffff;
   border-radius: 20px;
   margin: 3rem auto;
-  max-width: 1000px;
-  text-align: center;
+  max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .youtube-channel h2 {
@@ -181,13 +184,18 @@ button:hover, .shop-button:hover, .work-btn:hover, .read-more:hover {
    Brand Partners
    ============================ */
 .brand-partners {
-  background: #fffaf7;
   padding: 4rem 2rem;
+  background: #ffffff;
   border-radius: 20px;
-  margin: 4rem auto;
+  margin: 3rem auto;
   max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 .brand-partners h2 {
   font-family: 'Playfair Display', serif;
@@ -219,13 +227,16 @@ button:hover, .shop-button:hover, .work-btn:hover, .read-more:hover {
    CONTAINERS FOR ALL SECTIONS
    ============================ */
 
-.section-container {
-  padding: 4rem 2rem;
+padding: 4rem 2rem;
   background: #ffffff;
   border-radius: 20px;
   margin: 3rem auto;
   max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /* ============================
    OTHER SECTIONS (ADAPT AS NEEDED)
@@ -269,14 +280,16 @@ button:hover, .shop-button:hover, .work-btn:hover, .read-more:hover {
   }
 }
 .polaroid {
-  position: relative;
-  background: white;
-  border: 10px solid white;
-  border-bottom: 60px solid white;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  max-width: 400px;
-  text-align: center;
-  border-radius: 0px;
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .polaroid img {
@@ -316,14 +329,18 @@ button:hover, .shop-button:hover, .work-btn:hover, .read-more:hover {
   justify-content: center;
 }
 .frosted {
-  background: rgba(255,255,255,0.6);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  padding: 2rem;
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
   margin: 3rem auto;
-  max-width: 1100px;
+  max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .iphone-section {
   display: flex;
   justify-content: space-between;
