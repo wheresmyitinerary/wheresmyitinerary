@@ -140,9 +140,34 @@ button:hover, .shop-button:hover, .work-btn:hover, .read-more:hover {
 }
 
 /* ============================
+   YOUTUBE VIDEO FEATURE
+   ============================ */
+.youtube-channel {
+  padding: 4rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.youtube-channel h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--charcoal);
+  margin-bottom: 1.5rem;
+}
+
+.youtube-wrapper iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ============================
    OTHER SECTIONS (ADAPT AS NEEDED)
    ============================ */
-
 .frosted {
   background: rgba(255,255,255,0.5);
   backdrop-filter: blur(10px);
