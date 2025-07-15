@@ -1,10 +1,3 @@
-@font-face {
-  font-family: 'Pinklatte';
-  src: url('fonts/Pinklatte.woff2') format('woff2'),
-       url('fonts/Pinklatte.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 /* General Reset */
 * {
   margin: 0;
@@ -19,6 +12,17 @@ body {
   background-attachment: fixed;
   background-size: cover;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='32' width='32'><text y='20' font-size='20'>✨</text></svg>") 16 16, auto;
+}
+
+/* Font styles */
+h1, h2, h3, h4, h5, h6,
+.hero-text h1,
+.script-title {
+  font-family: 'Playfair Display', serif;
+}
+
+body, p, a, li, input, button {
+  font-family: 'Poppins', sans-serif;
 }
 .top-nav {
   position: absolute;
@@ -425,53 +429,6 @@ footer {
 .footer-columns a:hover {
   color: #e37c68;
 }
-/* Hero Banner */
-/* Global headers */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Pinklatte', cursive;
-}
-
-/* Hero welcome message */
-.hero-text h1 {
-  font-family: 'Pinklatte', cursive;
-  font-size: 3rem;
-  font-weight: normal;
-}
-.hero-header {
-  position: relative;
-  padding-bottom: 100px; /* to make room for overlap */
-}
-.hero-header img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hero-text {
-  position: absolute;
-  top: 40%;
-  left: 10%;
-  transform: translateY(-50%);
-  color: white;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-  z-index: 2;
-}
-
-.featured-over-hero {
-  position: absolute;
-  bottom: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-}
-
-.polaroid {
-  background: white;
-  border: 10px solid white;
-  border-bottom: 60px solid white;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  max-width: 400px;
-  text-align: center;
-}
 
 /* Frosted Background */
 .frosted {
@@ -508,7 +465,6 @@ h1, h2, h3, h4, h5, h6 {
 .iphone-display img {
   width: 100%;
   border-radius: 20px;
-
 }
 
 .iphone-menu {
