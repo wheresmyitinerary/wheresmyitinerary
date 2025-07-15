@@ -198,25 +198,35 @@ button:hover, .shop-button:hover, .work-btn:hover, .read-more:hover {
 }
 
 .brand-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
-  align-items: center;
-  justify-items: center;
 }
 
 .brand-grid img {
   max-height: 60px;
-  filter: grayscale(100%);
   opacity: 0.8;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .brand-grid img:hover {
-  filter: none;
+  transform: scale(1.2);
   opacity: 1;
 }
 
+/* ============================
+   CONTAINERS FOR ALL SECTIONS
+   ============================ */
+
+.section-container {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 1200px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
 /* ============================
    OTHER SECTIONS (ADAPT AS NEEDED)
    ============================ */
