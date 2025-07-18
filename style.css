@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6,
 
 .hero-text {
   position: absolute;
-  top: 40%;
+  top: 10%;
   left: 10%;
   transform: translateY(-50%);
   color: white;
@@ -270,15 +270,8 @@ padding: 4rem 2rem;
   }
   .featured-over-hero {
     bottom: -60px;
+ 
   }
-  nav ul {
-    flex-direction: column;
-    padding: 0.5rem;
-  }
-  nav ul li {
-    margin: 0.5rem 0;
-  }
-}
 .polaroid {
   padding: 4rem 2rem;
   background: #ffffff;
@@ -755,20 +748,6 @@ footer {
   opacity: 1;
 }
 
-.hero-logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 15;
-  width: 120px;
-}
-.hero-logo img {
-  width: 100%;
-  height: auto;
-}
-
-
-}
 .polaroid {
   padding: 4rem 2rem;
   background: #ffffff;
