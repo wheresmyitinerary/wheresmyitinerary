@@ -735,14 +735,6 @@ footer {
   margin: 4rem auto;
   max-width: 1200px;
 }
-
-.brand-partners h2 {
-  font-family: 'Pinklatte', cursive;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #442d2f;
-}
-
 .brand-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
