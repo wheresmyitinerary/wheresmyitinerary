@@ -344,7 +344,7 @@ padding: 4rem 2rem;
 }
 
 .iphone-display img {
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
   height: auto;
   border-radius: 20px;
@@ -353,7 +353,7 @@ padding: 4rem 2rem;
 
 .iphone-menu {
   flex: 1;
-  min-width: 260px;
+  min-width: 400px;
 }
 
 .iphone-menu h2 {
@@ -385,17 +385,10 @@ padding: 4rem 2rem;
 }
 
 .menu {
-  max-width: 300px;
+  max-width: 500px;
 }
 
-.menu ul {
-  list-style: none;
-  margin-top: 1rem;
-}
 
-.menu ul li {
-  margin: 0.5rem 0;
-}
 
 .shop-button {
   display: inline-block;
