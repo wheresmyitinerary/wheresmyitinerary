@@ -390,39 +390,23 @@ padding: 4rem 2rem;
   text-align: center;
   padding: 3rem 1rem;
 }
-.vibe-grid {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px; /* You can adjust the gap value as needed */
-  flex-wrap: wrap; /* Allow wrapping if the screen size is smaller */
-}
 
-.vibe-grid a {
-  display: block;
-  width: 100%; /* Make sure the images are responsive */
-  max-width: 150px; /* You can adjust this based on your design */
-}
-
-.vibe-grid img {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 6px; /* Optional: add rounded corners to the images */
-}
 .vibe-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
+  display: grid; /* Using grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Automatically adjusts the number of columns based on available space */
+  gap: 1rem; /* Adjust spacing between the items */
   padding: 1rem;
 }
 
 .vibe-grid img {
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s;
+  width: 100%; /* Ensure images fill their container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional rounded corners for images */
+  transition: transform 0.3s; /* Smooth hover effect */
 }
 
 .vibe-grid img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Email Signup */
