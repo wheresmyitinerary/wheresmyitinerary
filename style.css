@@ -31,14 +31,16 @@ h1, h2, h3, h4, h5, h6,
 
 .hero-header {
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   background-color: var(--primary-sand);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .hero-header img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-bottom: 6px solid var(--accent-clay);
 }
 
 .hero-logo {
@@ -47,11 +49,14 @@ h1, h2, h3, h4, h5, h6,
   left: 20px;
   z-index: 15;
   width: 120px;
+  border-radius: 8px;
+  padding: 5px;
 }
 
 .hero-logo img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 /* ============================
@@ -69,16 +74,44 @@ h1, h2, h3, h4, h5, h6,
 
 .polaroid {
   background: white;
-  border: 10px solid white;
-  border-bottom: 60px solid white;
+  border: 10px solid var(--primary-sand);
+  border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  max-width: 800px;
+  max-width: 90%;
   text-align: center;
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
+
 .polaroid:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.caption {
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--charcoal);
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: var(--sky-teal);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background: var(--punchy-pink);
 }
 
 /* ============================
@@ -88,52 +121,65 @@ h1, h2, h3, h4, h5, h6,
 .seasonal-vibes {
   text-align: center;
   padding: 3rem 1rem;
+  background-color: var(--primary-sand);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .vibe-grid {
-  display: grid; /* Use grid layout for responsiveness */
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Dynamic columns based on screen size */
-  gap: 1rem; /* Spacing between images */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
   padding: 1rem;
 }
 
 .vibe-grid img {
-  width: 100%; /* Ensure images fill their container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional rounded corners for images */
-  transition: transform 0.3s; /* Smooth hover effect */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .vibe-grid img:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* ============================
-   RESOURCE SECTION
-   ============================ */
-
-.frosted {
-  background: rgba(255,255,255,0.5);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 3rem;
+  transform: scale(1.1);
 }
 
 /* ============================
    FOOTER
    ============================ */
 
-.footer-columns {
+footer {
+  background-color: var(--accent-clay);
+  padding: 2rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+.footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
   gap: 2rem;
-  margin-top: 1rem;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-columns {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .footer-columns h4 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .footer-columns ul {
@@ -141,35 +187,13 @@ h1, h2, h3, h4, h5, h6,
   padding: 0;
 }
 
-.footer-columns li {
-  margin: 0.25rem 0;
-}
-
 .footer-columns a {
+  color: white;
   text-decoration: none;
-  color: #e37c68;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-footer {
-  background-color: #fff;
-  border-top: 1px solid #eee;
-  padding: 2rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  width: 100%;
-  gap: 2rem;
-}
-
-.footer-logo img {
-  height: 50px;
-  width: auto;
+.footer-columns a:hover {
+  color: var(--sky-teal);
 }
