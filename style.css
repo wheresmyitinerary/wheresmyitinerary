@@ -66,7 +66,6 @@ h1, h2, h3, h4, h5, h6,
   z-index: 10;
   max-width: 100%;
 }
-
 .polaroid {
   background: white;
   border: 10px solid white;
@@ -82,36 +81,157 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ============================
-   VIBES GRID
+   NAVIGATION
    ============================ */
 
-.seasonal-vibes {
-  text-align: center;
-  padding: 3rem 1rem;
-}
-
-.vibe-grid {
-  display: grid; /* Use grid layout for responsiveness */
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Dynamic columns based on screen size */
-  gap: 1rem; /* Spacing between images */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
   padding: 1rem;
+  background-color: var(--accent-clay);
+  margin: 0;
 }
 
-.vibe-grid img {
-  width: 100%; /* Ensure images fill their container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional rounded corners for images */
-  transition: transform 0.3s; /* Smooth hover effect */
+nav ul li {
+  margin: 0 1rem;
 }
 
-.vibe-grid img:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--sky-teal);
 }
 
 /* ============================
-   RESOURCE SECTION
+   BUTTONS
    ============================ */
 
+button, .shop-button, .work-btn, .read-more {
+  background-color: var(--punchy-pink);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .shop-button:hover, .work-btn:hover, .read-more:hover {
+  background-color: var(--sky-teal);
+  color: var(--charcoal);
+}
+
+/* ============================
+   YOUTUBE VIDEO FEATURE
+   ============================ */
+.youtube-channel {
+ padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.youtube-channel h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--charcoal);
+  margin-bottom: 1.5rem;
+}
+
+.youtube-wrapper iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.youtube-wrapper iframe {
+  width: 100%;
+  max-width: 720px;
+  height: 405px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+/* ============================
+   Brand Partners
+   ============================ */
+.brand-partners {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.brand-partners h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: var(--charcoal);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.brand-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.brand-grid img {
+  max-height: 60px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.brand-grid img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* ============================
+   CONTAINERS FOR ALL SECTIONS
+   ============================ */
+
+padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* ============================
+   OTHER SECTIONS (ADAPT AS NEEDED)
+   ============================ */
+.brand-partners h2, .blog-preview h2, .work-with-me h2, .email-signup h3 {
+  color: var(--charcoal);
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2rem;
+}
 .frosted {
   background: rgba(255,255,255,0.5);
   backdrop-filter: blur(10px);
@@ -120,9 +240,332 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 3rem;
 }
 
-/* ============================
-   FOOTER
-   ============================ */
+.email-signup, .blog-preview, .brand-partners, .work-with-me {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 1200px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .featured-over-hero {
+    bottom: -60px;
+ 
+  }
+.polaroid {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.caption {
+  padding: 1rem;
+}
+.featured-post {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  margin-top: -2rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: #e37c68;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* Resource Section */
+.resource-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.frosted {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.iphone-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.iphone-display img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.iphone-menu {
+  flex: 1;
+  min-width: 400px;
+}
+
+.iphone-menu h2 {
+  font-family: Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #e37c68;
+  margin-bottom: 1rem;
+}
+
+.iphone-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.iphone-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.iphone-menu a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.iphone-menu a:hover {
+  color: #e37c68;
+
+}
+
+.menu {
+  max-width: 500px;
+}
+
+
+
+.shop-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #e37c68;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* Vibes Grid */
+.seasonal-vibes {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.vibe-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* You can adjust the gap value as needed */
+  flex-wrap: wrap; /* Allow wrapping if the screen size is smaller */
+}
+
+.vibe-grid a {
+  display: block;
+  width: 100%; /* Make sure the images are responsive */
+  max-width: 150px; /* You can adjust this based on your design */
+}
+
+.vibe-grid img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 6px; /* Optional: add rounded corners to the images */
+}
+.vibe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.vibe-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.vibe-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Email Signup */
+.email-signup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem;
+  align-items: center;
+}
+
+.cta-text {
+  max-width: 400px;
+}
+
+.signup-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.signup-form input {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  background: #e37c68;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+}
+
+/* Blog Grid */
+.blog-preview {
+  padding: 2rem;
+  text-align: center;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.blog-grid article {
+  background: white;
+  border: 10px solid white;
+  border-bottom: 60px solid white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+.blog-grid article img {
+  width: 100%;
+  border-radius: 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.load-more {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background: #e37c68;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Work With Me */
+.work-with-me {
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom right, #fdf3f3, #eafcfb);
+  display: flex;
+  justify-content: center;
+}
+
+.work-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.work-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-text {
+  flex: 1;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fffafc;
+}
+
+.work-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: #e37c68;
+  margin-bottom: 1rem;
+}
+
+.work-text p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.work-btn {
+  background: #e37c68;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  width: fit-content;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.work-btn:hover {
+  background: #cf5c4b;
+}
+
+/* Footer */
 
 .footer-columns {
   display: flex;
@@ -149,7 +592,6 @@ h1, h2, h3, h4, h5, h6,
   text-decoration: none;
   color: #e37c68;
 }
-
 footer {
   background-color: #fff;
   border-top: 1px solid #eee;
@@ -172,4 +614,217 @@ footer {
 .footer-logo img {
   height: 50px;
   width: auto;
+}
+
+.footer-columns {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.footer-columns div h4 {
+  margin-bottom: 0.5rem;
+  color: #e37c68;
+  font-size: 1rem;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-columns li {
+  margin-bottom: 0.3rem;
+}
+
+.footer-columns a {
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.footer-columns a:hover {
+  color: #e37c68;
+}
+
+/* Frosted Background */
+.frosted {
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Container Utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* iPhone Wrapper (unchanged content) */
+.iphone-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.iphone-display {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.iphone-display img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.iphone-menu {
+  flex: 1;
+  min-width: 280px;
+}
+
+.signup-form-two {
+  display: flex; gap: 1rem;
+}
+.signup-form-two input {
+  flex: 1; padding: 0.75rem; border-radius: 6px; border: 1px solid #ccc;
+}
+.signup-form-two button {
+  background: #e37c68; color: #fff; padding: 0.75rem 1.5rem; border-radius: 6px;
+}
+@media (max-width: 768px) {
+  .work-card {
+    flex-direction: column;
+  }
+
+  .work-image img {
+    height: 250px;
+  }
+
+  .work-text {
+    padding: 2rem;
+  }
+}
+
+/* brand partners */
+.brand-partners {
+  background: #fff0e9;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 4rem auto;
+  max-width: 1200px;
+}
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.brand-grid img {
+  max-height: 60px;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.brand-grid img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.polaroid {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.caption {
+  padding: 1rem;
+}
+.featured-post {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  margin-top: -2rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: #e37c68;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.youtube-wrapper iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.polaroid {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 1200px;
+  min-height: 500px; /* or adjust as needed */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.caption {
+  padding: 1rem;
+}
+.featured-post {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  margin-top: -2rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: #e37c68;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
 }
