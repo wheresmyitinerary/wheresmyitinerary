@@ -433,3 +433,113 @@ footer {
     height: 300px;
   }
 }
+/* ============================ 
+   FEATURED PARTNERSHIPS SECTION
+   ============================ */
+
+.brand-partners {
+  padding: 4rem 2rem;
+  background-color: var(--white);
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.brand-partners h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: var(--charcoal);
+  margin-bottom: 2rem;
+}
+
+.brand-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates responsive columns */
+  gap: 2rem;
+  justify-items: center; /* Centers logos inside grid cells */
+  padding: 0 2rem;
+}
+
+.brand-logo {
+  width: 100%;
+  max-width: 200px; /* Default max size */
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  opacity: 1;
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* ============================ 
+   WORK WITH ME SECTION
+   ============================ */
+
+.work-with-me {
+  padding: 5rem 2rem;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--white);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.work-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+.work-text {
+  flex: 1;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.work-text p {
+  font-size: 1.2rem;
+  color: var(--charcoal);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.work-btn {
+  background-color: var(--sky-teal);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.work-btn:hover {
+  background-color: var(--punchy-pink);
+  color: var(--charcoal);
+}
+
