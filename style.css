@@ -52,6 +52,7 @@ a:hover {
   text-align: center;
   color: var(--charcoal);
   background: url('images/PIER 60.JPG') no-repeat center center/cover;
+  background-size: cover;
 }
 
 .hero-header h1 {
