@@ -90,12 +90,12 @@ a:hover {
 
 .featured-over-hero {
   position: absolute;
-  bottom: -60px;  /* Adjusted to ensure space between the hero text and featured post */
+  bottom: -100px;  /* Adjusted to ensure space between the hero text and featured post */
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
   width: 90%;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .polaroid {
