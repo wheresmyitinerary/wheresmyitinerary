@@ -453,16 +453,17 @@ footer {
 
 .brand-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates responsive columns */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
   gap: 2rem;
   justify-items: center; /* Centers logos inside grid cells */
   padding: 0 2rem;
 }
 
 .brand-logo {
+  max-width: 200px; /* Set max-width for consistency */
   width: 100%;
-  max-width: 200px; /* Default max size */
-  height: auto;
+  height: auto; /* Keeps aspect ratio */
+  object-fit: contain; /* Prevents stretching/distortion */
   opacity: 0.8;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
