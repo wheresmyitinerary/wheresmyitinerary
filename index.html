@@ -1,221 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WheresMyItinerary</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/logobw.png" type="image/png">
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Font: Playfair and Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Travel Influencer Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <section class="hero-header">
-  <div class="top-nav">
-    <nav>
-      <ul>
-        <li><a href="#">Vibes</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-<!--HERO IMAGE--!>
-  <img src="images/PIER 60.JPG" alt="Hero image" />
-    
-<!--WELCOME BANNER--!>
-  
-  <div class="hero-text">
-    <h1>Welcome to Where’s My Itinerary</h1>
-  </div>
-
-  <!--Logo over Hero--!>
+  <!-- ============================ 
+      HERO SECTION
+  ============================ -->
+  <header class="hero-header">
+    <img src="hero-image.jpg" alt="Hero Image">
     <div class="hero-logo">
-  <img src="images/logobw.png" alt="Where’s My Itinerary Logo">
-</div>
-    
-  <!-- FEATURED POLAROID POST -->
-<div class="featured-over-hero" style="
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
-  width: 90%;
-  max-width: 400px;
-">
-  <section class="featured-post-section">
-    <div class="polaroid" style="
-    background: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    padding: 10px;
-    text-align: center;
-    border-radius: 6px;
-  ">
-    <img src="images/fobby hike.jpg" alt="Featured post" style="width: 100%; border-radius: 4px;" />
-    <div class="caption">
-      <h2>Main Post Title</h2>
-      <p>Intro snippet for your featured post …</p>
-      <a href="blog/main-post.html" class="read-more">Read More</a>
+      <img src="logo.png" alt="Logo">
     </div>
-  </div>
-</div>
-</section>
+    <h1>Explore the World with Me</h1>
+    <p>Your ultimate guide to the best travel destinations and hidden gems.</p>
+  </header>
 
+  <!-- ============================ 
+      NAVIGATION
+  ============================ -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Choose Your Vibe -->
-  <section class="section-container">
-  <h2>Choose Your Vibe</h2>
-    <div class="vibe-grid">
-      <a href="blog/hot-sunny.html"><img src="images/vibe_1.png" alt="Hot Sunny Vibes"></a>
-      <a href="blog/cool-dreamy.html"><img src="images/blank_polaroid.png" alt="Cool Dreamy Vibes"></a>
-      <a href="blog/green-outdoors.html"><img src="images/blank_polaroid.png" alt="Green Outdoors Vibes"></a>
-      <a href="blog/city.html"><img src="images/blank_polaroid.png" alt="City Vibes"></a>
+  <!-- ============================ 
+      IMAGE GALLERY SECTION
+  ============================ -->
+  <section id="gallery" class="image-gallery">
+    <div class="image-container">
+      <img src="destination1.jpg" alt="Destination 1">
+      <img src="destination2.jpg" alt="Destination 2">
+      <img src="destination3.jpg" alt="Destination 3">
     </div>
-</section>
-  
-  <!-- iPhone + Resources (Seamless) -->
-  <section class="frosted iphone-wrapper container">
-  <div class="iphone-display"><img src="images/iphone itin.PNG" alt="Phone Itinerary" />
-  </div>
-  <div class="iphone-menu"><h2>Mini Resources</h2>
-      <ul>
-        <li><a href="#">✨ Free Mini Itineraries</a></li>
-        <li><a href="#">❤️ Date Night Ideas</a></li>
-        <li><a href="#">📋 Checklists</a></li>
-      </ul>
-      <a href="shop.html" class="shop-button">Itineraries & Resources</a>
-    </div></div>
-</section>
-
-  <!-- Email Signup -->
-  <section class="email-signup">
-    <div class="cta-text">
-      <h3>Stay in the Loop</h3>
-      <p>Subscribe for free travel resources, tips, and first access to new content!</p>
-    </div>
-    <form class="signup-form">
-      <input type="text" placeholder="Your name" required />
-      <input type="email" placeholder="Your email" required />
-      <button type="submit">Sign Up for Exclusives</button>
-    </form>
   </section>
 
-  <!-- Blog Grid -->
-  <section class="blog-preview">
-    <h2>Dive into the Latest Posts</h2>
-    <div class="blog-grid">
-      <article><a href="#"><img src="images/LOBSTAH.jpeg" alt="Blog 1" /></a></article>
-      <article><a href="#"><img src="images/PIER 60.JPG" alt="Blog 2" /></a></article>
-      <article><a href="#"><img src="images/fobby hike.jpg" alt="Blog 3" /></a></article>
-      <article><a href="#"><img src="images/ATL WHALESHARK.jpg" alt="Blog 4" /></a></article>
-      <article><a href="#"><img src="images/lavender.jpeg" alt="Blog 5" /></a></article>
-      <article><a href="#"><img src="images/PIER 60.JPG" alt="Blog 6" /></a></article>
+  <!-- ============================ 
+      VIDEO FEATURE SECTION
+  ============================ -->
+  <section class="video-section">
+    <h2>Watch My Latest Adventure</h2>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <button class="load-more">Load More</button>
   </section>
 
-  <!--YOUTUBE VIDEO FEATURE--!>
-  <section class="youtube-channel">
-  <h2>Catch the Vibes on YouTube</h2>
-  <div class="youtube-wrapper">
-    <iframe 
-      width="560" 
-      height="315" 
-      src="https://www.youtube.com/embed?listType=user_uploads&list=YOUR_CHANNEL_NAME" 
-      title="YouTube video player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowfullscreen>
-    </iframe>
-  </div>
-</section>
-    <!--YOUTUBE SUBSCRIBE BUTTON--!>
-  <div class="subscribe-button">
-  <script src="https://apis.google.com/js/platform.js"></script>
-  <div class="g-ytsubscribe" data-channel="YOUR_CHANNEL_NAME" data-layout="default" data-count="default"></div>
-</div>
-  
-  <!-- Work With Me -->
-  <section class="work-with-me">
-  <div class="work-card">
-    <div class="work-image">
-      <img src="images/CATAMARAN.jpg" alt="Amber on a sailboat at sunset">
-    </div>
-    <div class="work-text">
-      <h2>Let’s Create Something Together</h2>
-      <p>
-        Looking for content collabs, brand partnerships, or travel storytelling that stands out?  
-        I’ve got the itinerary—and the audience—to make it pop.
-      </p>
-      <a href="#contact" class="work-btn">Partner With Me</a>
-    </div>
-  </div>
-</section>
+  <!-- ============================ 
+      BLOG SECTION
+  ============================ -->
+  <section id="blog" class="blog-grid">
+    <article>
+      <img src="blog1.jpg" alt="Blog 1">
+      <h3>Top 10 Hidden Gems in Europe</h3>
+      <p>Discover the best off-the-beaten-path locations in Europe!</p>
+      <a href="#" class="read-more">Read More</a>
+    </article>
 
- <!-- PARTNERS -->
-<section class="brand-partners">
-  <h2>Featured Partnerships</h2>
-  <div class="brand-grid">
-    <img src="images/valentino.png" alt="Valentino" />
-    <img src="images/prada.png" alt="Prada Beauty" />
-    <img src="images/disney.png" alt="Walt Disney World" />
-    <img src="images/jameson.png" alt="Jameson Whiskey" />
-    <img src="images/noughty.png" alt="Noughty Hair Care" />
-    <img src="images/celsius.png" alt="Celsius Energy" />
-    <img src="images/visitorlando.png" alt="Visit Orlando" />
-    <img src="images/lacroix.png" alt="LaCroix" />
-    <img src="images/absolut.png" alt="Absolut Vodka" />
-  </div>
-</section>    
-  
-  <!-- Footer -->
+    <article>
+      <img src="blog2.jpg" alt="Blog 2">
+      <h3>The Ultimate Packing List</h3>
+      <p>Everything you need for your next adventure.</p>
+      <a href="#" class="read-more">Read More</a>
+    </article>
+
+    <article>
+      <img src="blog3.jpg" alt="Blog 3">
+      <h3>Solo Travel: A Beginner’s Guide</h3>
+      <p>Tips for traveling alone and making the most of your experience.</p>
+      <a href="#" class="read-more">Read More</a>
+    </article>
+  </section>
+
+  <!-- ============================ 
+      FOOTER SECTION
+  ============================ -->
   <footer>
     <div class="footer-container">
       <div class="footer-logo">
-        <img src="images/logo.png" alt="WheresMyItinerary Logo" />
+        <img src="logo.png" alt="Logo">
       </div>
       <div class="footer-columns">
         <div>
-          <h4>Get Inspired</h4>
+          <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Road Trips</a></li>
-            <li><a href="#">Weekend Getaways</a></li>
-            <li><a href="#">Dog-Friendly Picks</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h4>Get Organized</h4>
+          <h4>Follow Me</h4>
           <ul>
-            <li><a href="#">Mini Itineraries</a></li>
-            <li><a href="#">Checklists</a></li>
-            <li><a href="#">Trip Planners</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Get in Contact</h4>
-          <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="work.html">Collab Inquiry</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">YouTube</a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script async src="//www.instagram.com/embed.js"></script>
-  <script src="scripts.js"></script>
+  <!-- ============================ 
+      SUBSCRIBE SECTION
+  ============================ -->
+  <section class="email-signup">
+    <div class="cta-text">
+      <h3>Join the Adventure!</h3>
+      <p>Subscribe to get the latest travel tips and destination guides straight to your inbox.</p>
+    </div>
+    <form class="signup-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
