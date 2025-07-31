@@ -149,20 +149,26 @@ nav ul li a:hover {
 }
 
 /* ============================ 
-   IMAGE GALLERY
+   IMAGE GALLERY (Updated)
    ============================ */
 
 .vibe-grid {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: center;  /* Centers the items in the container */
+  flex-wrap: wrap;          /* Ensures images wrap when the container is smaller */
+  gap: 20px;                /* Space between the images */
   padding: 3rem 1rem;
 }
 
+.vibe-grid a {
+  display: block;
+  max-width: 250px; /* Ensure images don’t exceed this size */
+  width: 100%;      /* Ensures images take the full width within their container */
+}
+
 .vibe-grid img {
-  width: 100%;
-  max-width: 250px;
+  width: 100%;  /* Makes the image responsive to container width */
+  height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -180,10 +186,14 @@ nav ul li a:hover {
     padding: 10px 0;
   }
 
+  .vibe-grid a {
+    max-width: 200px;
+  }
+
   .vibe-grid img {
-    flex-shrink: 0;
-    width: 200px;
-    height: auto;
+    flex-shrink: 0;  /* Prevents images from shrinking */
+    width: 100%;     /* Ensures the image fills the width of its container */
+    height: auto;    /* Maintains aspect ratio */
   }
 }
 
