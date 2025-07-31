@@ -47,7 +47,7 @@ a:hover {
 
 .hero-header {
   position: relative;
-  padding: 100px 0;
+  padding: 120px 0 50px; /* Increased padding-bottom to provide space for the featured post */
   background-color: var(--primary-sand);
   text-align: center;
   color: var(--charcoal);
@@ -59,12 +59,16 @@ a:hover {
   font-size: 3rem;
   margin: 0;
   color: var(--white);
+  z-index: 10;
+  position: relative;
 }
 
 .hero-header p {
   font-size: 1.5rem;
   margin-top: 10px;
   color: var(--white);
+  z-index: 10;
+  position: relative;
 }
 
 .hero-logo {
@@ -79,6 +83,41 @@ a:hover {
   width: 100%;
   height: auto;
 }
+
+/* ============================ 
+   FEATURED POLAROID POST
+   ============================ */
+
+.featured-over-hero {
+  position: absolute;
+  bottom: -60px;  /* Adjusted to ensure space between the hero text and featured post */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  width: 90%;
+  max-width: 400px;
+}
+
+.polaroid {
+  background: white;
+  border: 10px solid white;
+  border-bottom: 60px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.polaroid:hover {
+  transform: scale(1.05);
+}
+
 
 /* ============================ 
    NAVIGATION
@@ -107,40 +146,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: var(--sky-teal);
-}
-
-/* ============================ 
-   FEATURED POLAROID POST
-   ============================ */
-
-.featured-over-hero {
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
-  width: 90%;
-  max-width: 400px;
-}
-
-.polaroid {
-  background: white;
-  border: 10px solid white;
-  border-bottom: 60px solid white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  padding: 10px;
-  text-align: center;
-  border-radius: 6px;
-}
-
-.polaroid img {
-  width: 100%;
-  border-radius: 4px;
-  transition: transform 0.3s ease;
-}
-
-.polaroid:hover {
-  transform: scale(1.05);
 }
 
 /* ============================ 
