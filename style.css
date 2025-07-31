@@ -68,7 +68,7 @@ a:hover {
   margin-top: 10px;
   color: var(--white);
   z-index: 10;
-  position: relative;
+  position: top;
 }
 
 .hero-logo {
