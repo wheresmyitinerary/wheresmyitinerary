@@ -333,6 +333,68 @@ nav ul li a:hover {
 .load-more:hover {
   background-color: var(--sky-teal);
 }
+/* ============================ 
+   REFER LINK SECTION
+   ============================ */
+
+.refer-link-section {
+  padding: 3rem 1rem;
+  background-color: var(--light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.refer-box {
+  background-color: var(--white);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.refer-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.refer-box p {
+  font-size: 1.2rem;
+  color: var(--charcoal);
+  margin-bottom: 2rem;
+}
+
+.refer-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.refer-button {
+  display: inline-block;
+  background-color: var(--sky-teal);
+  color: var(--white);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.refer-button:hover {
+  background-color: var(--punchy-pink);
+  color: var(--charcoal);
+}
+
 
 /* ============================ 
    YOUTUBE VIDEO FEATURE
