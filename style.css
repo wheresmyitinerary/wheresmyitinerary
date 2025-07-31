@@ -452,20 +452,28 @@ footer {
 }
 
 .brand-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
-  justify-items: center; /* Centers logos inside grid cells */
-  padding: 0 2rem;
 }
 
 .brand-logo {
-  max-width: 200px; /* Set max-width for consistency */
   width: 100%;
-  height: auto; /* Keeps aspect ratio */
-  object-fit: contain; /* Prevents stretching/distortion */
+  max-width: 200px; /* Ensure consistent max size for logos */
+  height: auto;
+  object-fit: contain; /* Ensures logos maintain their aspect ratio without stretching */
   opacity: 0.8;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-logo img {
+  max-width: 100%;
+  height: auto; /* Ensures the logos don’t stretch */
+  display: block;
 }
 
 .brand-logo:hover {
