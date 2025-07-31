@@ -811,3 +811,35 @@ footer {
   text-decoration: none;
   border-radius: 6px;
 }
+
+   /* Desktop Styles */
+.image-container {
+  display: flex;
+  justify-content: space-between; /* Adds space between the images */
+  gap: 20px; /* Adjusts space between images */
+  flex-wrap: nowrap; /* Prevents wrapping on desktop */
+  align-items: center; /* Vertically center images */
+}
+
+.image-container img {
+  width: 100%; /* Makes sure the image fits its container */
+  max-width: 300px; /* Set a max-width to ensure they are all the same size */
+  height: auto; /* Keeps the aspect ratio */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .image-container {
+    overflow-x: auto; /* Enables horizontal scrolling on mobile */
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping on mobile */
+    gap: 15px; /* Adjust spacing for mobile view */
+    padding: 10px 0; /* Adds some padding */
+  }
+
+  .image-container img {
+    flex-shrink: 0; /* Prevents the images from shrinking */
+    width: 200px; /* Adjust width for mobile */
+    height: auto; /* Keeps aspect ratio */
+  }
+}
