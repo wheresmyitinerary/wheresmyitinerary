@@ -149,32 +149,39 @@ nav ul li a:hover {
 }
 
 /* ============================ 
-   IMAGE GALLERY (Updated)
-   ============================ */
-
-/* ============================ 
-   IMAGE GALLERY
+   IMAGE GALLERY CONTAINER WITH FROSTED BACKGROUND
 ============================ */
+.vibe-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.7); /* Frosted effect */
+  backdrop-filter: blur(10px); /* Blur the background */
+  padding: 2rem;
+  border-radius: 12px; /* Optional: round the corners of the frosted container */
+}
+
+/* IMAGE GALLERY */
 .vibe-grid {
   display: flex;
   gap: 20px;
   overflow-x: auto; /* Enables horizontal scrolling */
-  padding: 3rem 1rem;
+  padding: 1rem 0;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
 }
 
 .vibe-grid img {
   width: 100%;
   max-width: 250px; /* Adjust to the size of your images */
-  border-radius: 10px;
+  height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 5px solid white; /* Add a white border for the Polaroid effect */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Smooth edges for the images */
 }
 
 .vibe-grid img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Add hover shadow effect */
 }
 
 /* Mobile view adjustments */
