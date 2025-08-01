@@ -44,7 +44,20 @@ a:hover {
 /* ============================ 
    HERO SECTION
    ============================ */
-
+.featured-over-hero {
+  margin-top: 4rem; /* Adjust the space between hero and post */
+  width: 100%; /* Make sure the post takes up the entire width */
+  max-width: 100%; /* Ensure no max-width constraints */
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 3rem; /* Added padding inside the post for better spacing */
+  overflow: hidden;
+  z-index: 2; /* Keep it above other sections */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
 .hero-header {
   position: relative;
   height: 50vh; /* Adjust this value to make the hero image shorter */
@@ -100,10 +113,10 @@ a:hover {
   overflow: hidden;
   background: rgba(255, 255, 255, 0.7); /* Frosted effect */
   backdrop-filter: blur(10px); /* Applies blur effect to the background */
-  padding: 4rem 1rem; /* Increased padding for better spacing */
+  padding: 4rem 1rem; /* Added padding for better spacing */
   border-radius: 12px;
-  margin-top: 5rem; /* Ensures enough space between the featured post and this section */
-  z-index: 3; /* Ensures this section is on top of the background */
+  margin-top: 5rem; /* Ensure space between the featured post and Vibe section */
+  z-index: 3; /* Ensure it stays on top */
 }
 
 .vibe-grid {
@@ -113,6 +126,8 @@ a:hover {
   padding: 1rem 0;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
   z-index: 3;
+  justify-content: center; /* Centers the images within the container */
+  flex-wrap: wrap; /* Ensures it wraps if needed on smaller screens */
 }
 
 .vibe-grid img {
@@ -142,7 +157,6 @@ a:hover {
     height: auto;
   }
 }
-
 /* ============================ 
    NAVIGATION
    ============================ */
