@@ -44,6 +44,20 @@ a:hover {
 /* ============================ 
    HERO SECTION
    ============================ */
+.featured-over-hero {
+  margin-top: 4rem; /* Adjust the space between hero and post */
+  width: 100%; /* Make sure the post takes up the entire width */
+  max-width: 100%; /* Ensure no max-width constraints */
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 3rem; /* Added padding inside the post for better spacing */
+  overflow: hidden;
+  z-index: 2; /* Keep it above other sections */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
 .hero-header {
   position: relative;
   height: 50vh; /* Adjust this value to make the hero image shorter */
@@ -70,6 +84,23 @@ a:hover {
 .hero-logo img {
   width: 100%; /* Make sure the logo fills the container */
   height: auto; /* Keep aspect ratio intact */
+}
+
+/* ============================ 
+   FEATURED RECTANGLE POST
+   ============================ */
+
+.featured-over-hero {
+  margin-top: 5rem; /* Increased space between hero and post */
+  width: 90%; /* Makes the blog post almost across the whole screen */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 3rem; /* Added padding inside the post for better readability */
+  overflow: hidden;
+  z-index: 2; /* Ensures this section stays above other sections */
 }
 
 /* ============================ 
@@ -589,4 +620,3 @@ footer {
   background-color: var(--punchy-pink);
   color: var(--charcoal);
 }
-
