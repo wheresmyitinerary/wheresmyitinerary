@@ -292,6 +292,7 @@ nav ul li a:hover {
   background-color: var(--sky-teal);
   color: var(--white);
   cursor: pointer;
+  float: right;
 }
 
 .signup-form button:hover {
