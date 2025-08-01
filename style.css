@@ -47,14 +47,14 @@ a:hover {
 
 .hero-header {
   position: relative;
-  height: 60vh; /* Adjust this value to make the hero image shorter */
+  height: 50vh; /* Adjust this value to make the hero image shorter */
   background-color: var(--primary-sand);
   text-align: center;
   color: var(--charcoal);
   background: url('images/PIER 60.JPG') no-repeat center center/cover;
   background-size: cover;
   background-position: center;
-  padding-bottom: 20rem; /* Added space below the hero */
+  padding-bottom: 5rem; /* Reduced space below the hero */
 }
 
 /* ============================ 
@@ -62,7 +62,7 @@ a:hover {
    ============================ */
 
 .featured-over-hero {
-  margin-top: 4rem; /* Increased space between hero and post */
+  margin-top: 2rem; /* Reduced space between hero and post */
   width: 90%; /* Makes the blog post almost across the whole screen */
   margin-left: auto;
   margin-right: auto;
@@ -91,6 +91,7 @@ a:hover {
 .featured-post:hover {
   transform: scale(1.05);
 }
+
 
 /* ============================ 
    NAVIGATION
