@@ -152,48 +152,43 @@ nav ul li a:hover {
    IMAGE GALLERY (Updated)
    ============================ */
 
+/* ============================ 
+   IMAGE GALLERY
+============================ */
 .vibe-grid {
   display: flex;
-  justify-content: center;  /* Centers the items in the container */
-  flex-wrap: wrap;          /* Ensures images wrap when the container is smaller */
-  gap: 20px;                /* Space between the images */
+  gap: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling */
   padding: 3rem 1rem;
-}
-
-.vibe-grid a {
-  display: block;
-  max-width: 250px; /* Ensure images don’t exceed this size */
-  width: 100%;      /* Ensures images take the full width within their container */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
 }
 
 .vibe-grid img {
-  width: 100%;  /* Makes the image responsive to container width */
-  height: auto;
+  width: 100%;
+  max-width: 250px; /* Adjust to the size of your images */
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 5px solid white; /* Add a white border for the Polaroid effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .vibe-grid img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Mobile view adjustments */
 @media (max-width: 768px) {
   .vibe-grid {
-    overflow-x: auto;
     display: flex;
     gap: 15px;
     padding: 10px 0;
   }
 
-  .vibe-grid a {
-    max-width: 200px;
-  }
-
   .vibe-grid img {
-    flex-shrink: 0;  /* Prevents images from shrinking */
-    width: 100%;     /* Ensures the image fills the width of its container */
-    height: auto;    /* Maintains aspect ratio */
+    flex-shrink: 0;
+    width: 200px;
+    height: auto;
   }
 }
 
