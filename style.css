@@ -86,7 +86,7 @@ a:hover {
 }
 
 /* ============================ 
-   FEATURED POLAROID POST
+   FEATURED RECTANGLE POST
    ============================ */
 
 .featured-over-hero {
@@ -100,25 +100,23 @@ a:hover {
   overflow: hidden; /* Prevents overflow of content */
 }
 
-.polaroid {
-  background: white;
-  border: 10px solid white;
-  border-bottom: 60px solid white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  padding: 10px;
+.featured-post {
+  background: #fff;
+  border-radius: 8px; /* Rounded corners for the rectangle post */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Optional: shadow for depth */
+  padding: 15px;
   text-align: center;
-  border-radius: 12px;
 }
 
-.polaroid img {
+.featured-post img {
   width: 100%; /* Makes the image stretch across the entire width */
   height: auto; /* Keeps the image's aspect ratio */
-  border-radius: 4px;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
-.polaroid:hover {
-  transform: scale(1.05);
+.featured-post:hover {
+  transform: scale(1.05); /* Zooms in slightly on hover */
 }
 
 
