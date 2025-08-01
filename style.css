@@ -292,9 +292,11 @@ nav ul li a:hover {
   background-color: var(--sky-teal);
   color: var(--white);
   cursor: pointer;
+}
+/* Targeting the button inside a form or container */
+.form-container button {
   float: right;
 }
-
 .signup-form button:hover {
   background-color: var(--punchy-pink);
 }
