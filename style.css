@@ -54,7 +54,7 @@ a:hover {
   background: url('images/PIER 60.JPG') no-repeat center center/cover;
   background-size: cover;
   background-position: center;
-  padding-bottom: 3rem; /* Added space below the hero */
+  padding-bottom: 20rem; /* Added space below the hero */
 }
 
 /* ============================ 
@@ -91,8 +91,6 @@ a:hover {
 .featured-post:hover {
   transform: scale(1.05);
 }
-
-
 
 /* ============================ 
    NAVIGATION
@@ -270,7 +268,7 @@ nav ul li a:hover {
 }
 /* Targeting the button inside a form or container */
 .form-container button {
-  float: center;
+  float: right;
 }
 .signup-form button:hover {
   background-color: var(--punchy-pink);
