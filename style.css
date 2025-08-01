@@ -295,7 +295,7 @@ nav ul li a:hover {
 }
 /* Targeting the button inside a form or container */
 .form-container button {
-  float: right;
+  float: center;
 }
 .signup-form button:hover {
   background-color: var(--punchy-pink);
