@@ -216,6 +216,31 @@ section{
   line-height:1.7;
   color:#555;
 }
+  /* JOURNAL CARDS */
+
+.journal-card{
+  background:white;
+  border-radius:5px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  transition:.35s;
+  text-decoration:none;
+  color:var(--black);
+}
+
+.journal-card:hover{
+  transform:translateY(-8px);
+}
+
+.journal-card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.journal-card-content{
+  padding:30px;
+}
 
 .brand-tag{
   display:inline-block;
@@ -396,55 +421,94 @@ footer{
     Stories from unforgettable stays, hidden gems, and experiences worth remembering.
   </p>
 
-  <div class="grid two">
+<div class="grid two">
 
-    <div class="card">
-      <span class="brand-tag">Italy</span>
-      <h3>Chalet Al Foss</h3>
-      <p>
-        A fairytale escape in the Italian Alps where breathtaking landscapes, thoughtful hospitality, and luxury design transform a hotel stay into a once-in-a-lifetime experience.
-      </p>
-      <a href="#">Read Story →</a>
-    </div>
 
-    <div class="card">
-      <span class="brand-tag">Arizona</span>
-      <h3>JW Marriott Desert Ridge + Sedona</h3>
-      <p>
-        A romantic desert escape designed around connection, adventure, relaxation, and the beauty of slowing down.
-      </p>
-      <a href="#">Read Story →</a>
-    </div>
+<a href="#" class="journal-card">
 
-    <div class="card">
-      <span class="brand-tag">Mexico</span>
-      <h3>Tulum</h3>
-      <p>
-        Exploring boutique stays, wellness, local culture, and the evolving balance between authenticity and luxury.
-      </p>
-      <a href="#">Read Story →</a>
-    </div>
+<img src="images/chalet.jpg">
 
-    <div class="card">
-      <span class="brand-tag">Dog Friendly Travel</span>
-      <h3>Key West With Four Paws</h3>
-      <p>
-        Luxury travel does not have to mean leaving family behind. A coastal adventure designed around unforgettable moments with my dogs.
-      </p>
-      <a href="#">Read Story →</a>
-    </div>
+<div class="journal-card-content">
 
-    <div class="card">
-      <span class="brand-tag">Coastal Escape</span>
-      <h3>Asbury Park</h3>
-      <p>
-        A sister getaway celebrating food, nostalgia, ocean views, and the small moments that become lifelong memories.
-      </p>
-      <a href="#">Read Story →</a>
-    </div>
+<span class="brand-tag">Italy</span>
 
-  </div>
-</section>
+<h3>Chalet Al Foss</h3>
+
+<p>
+A fairytale escape in the Italian Alps where breathtaking landscapes,
+thoughtful hospitality, and luxury design transform a hotel stay into a
+once-in-a-lifetime experience.
+</p>
+
+</div>
+
+</a>
+
+
+
+<a href="#" class="journal-card">
+
+<img src="images/sedona.jpg">
+
+<div class="journal-card-content">
+
+<span class="brand-tag">Arizona</span>
+
+<h3>JW Marriott Desert Ridge + Sedona</h3>
+
+<p>
+A romantic desert escape designed around connection, adventure,
+relaxation, and the beauty of slowing down.
+</p>
+
+</div>
+
+</a>
+
+
+
+<a href="#" class="journal-card">
+
+<img src="images/tulum.jpg">
+
+<div class="journal-card-content">
+
+<span class="brand-tag">Mexico</span>
+
+<h3>Tulum</h3>
+
+<p>
+Exploring boutique stays, wellness, local culture, and the balance
+between authenticity and luxury.
+</p>
+
+</div>
+
+</a>
+
+
+
+<a href="#" class="journal-card">
+
+<img src="images/keywest.jpg">
+
+<div class="journal-card-content">
+
+<span class="brand-tag">Dog Friendly Travel</span>
+
+<h3>Key West With Four Paws</h3>
+
+<p>
+Luxury travel does not have to mean leaving family behind.
+A coastal adventure with my dogs.
+</p>
+
+</div>
+
+</a>
+
+
+</div>
 
 <section id="reels">
   <h2 class="section-title">Reels + TikTok</h2>
